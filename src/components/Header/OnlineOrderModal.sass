@@ -1,0 +1,122 @@
+@use '../../index' as *
+
+.OnlineOrderModal
+  @include roboto-medium
+  position: fixed
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+  z-index: 15
+  background: rgba(0, 0, 0, 0.2)
+  backdrop-filter: blur(4px)
+  -webkit-backdrop-filter: blur(4px)
+  display: flex
+  justify-content: center
+  align-items: center
+  &__wrapper
+    max-width: 600px
+    width: 100%
+    margin: 0 20px
+    background: $white
+    z-index: 16
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+  &__header
+    width: 100%
+    height: 50px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding: 10px 20px
+    border-bottom: 1px solid $color-border
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05)
+  &__heading
+    font-size: 16px
+    font-weight: 500
+    color: $black
+  &__close
+    font-size: 18px
+    color: $black
+  &__main
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding: 20px 20px
+    color: $black
+    font-size: 16px
+    gap: 15px
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 7px
+
+  &__input
+    border: 1px solid $black
+    border-radius: 4px
+    width: 100%
+    padding: 7px 14px
+    color: $black
+    font-size: 14px
+  &__input.incorrect
+    border: 1px solid $color-incorrect
+  &__input.correct
+    border: 1px solid $color-correct
+  &__input:focus
+    border-color: $color-main-blue
+    -webkit-box-shadow: inset 0 1px 1px $color-lighter-blue
+    box-shadow: 0 0px 4px $color-lighter-blue
+  &__input.incorrect:focus
+    border-color: $color-incorrect
+    -webkit-box-shadow: inset 0 1px 1px $color-incorrect
+    box-shadow: 0 0px 4px $color-incorrect
+  &__input.correct:focus
+    border-color: $color-correct
+    -webkit-box-shadow: inset 0 1px 1px $color-correct
+    box-shadow: 0 0px 4px $color-correct
+
+  &__select
+    border: 1px solid $black
+    border-radius: 4px
+    width: 100%
+    font-size: 14px
+    color: $black
+    padding: 7px 14px
+    outline: none
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+  &__select.incorrect
+    border: 1px solid $color-incorrect
+  &__select.correct
+    border: 1px solid $color-correct
+  &__select:focus
+    border-color: $color-main-blue
+    -webkit-box-shadow: inset 0 1px 1px rgba(37, 124, 254, 0.7)
+    box-shadow: 0 0px 4px rgba(37, 124, 254, 0.7)
+  &__select.incorrect:focus
+    border-color: $color-incorrect
+    -webkit-box-shadow: inset 0 1px 1px $color-incorrect
+    box-shadow: 0 0px 4px $color-incorrect
+  &__select.correct:focus
+    border-color: $color-correct
+    -webkit-box-shadow: inset 0 1px 1px $color-correct
+    box-shadow: 0 0px 4px $color-correct
+  &__incorrect
+    color: $color-incorrect
+    font-size: 14px
+
+  &__footer
+    width: 100%
+    padding: 10px 20px
+    border-top: 1px solid $color-border
+    display: flex
+    justify-content: flex-end
+  &__submit
+    padding: 7px 14px
+    border: 1px solid $black
+    border-radius: 4px
+    color: $black
+    font-size: 14px
