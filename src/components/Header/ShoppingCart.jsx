@@ -1,6 +1,4 @@
 import './ShoppingCart.sass'
-import shoppingCart from '@assets/ShoppingCart.svg'
-import {useEffect, useRef} from "react";
 
 export default function ShoppingCart() {
     let amount = 0;

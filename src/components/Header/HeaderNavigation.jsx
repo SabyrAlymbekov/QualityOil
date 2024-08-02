@@ -40,7 +40,7 @@ export default function HeaderNavigation() {
                 НОВОСТИ
             </NavLink>
             <NavLink
-                to='/contacts'
+                to='/contact'
                 className="HeaderNavigation__link">
                 КОНТАКТЫ
             </NavLink>

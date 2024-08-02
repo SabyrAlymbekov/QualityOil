@@ -2,7 +2,6 @@
 
 .HeaderInfo
   @include roboto-medium
-  color: $color-main-grey
   font-size: 12px
   display: flex
   flex-direction: row
@@ -10,6 +9,7 @@
   padding-top: 14px !important
   padding-bottom: 12px !important
   border-bottom: 1px solid $color-border
+  color: $color-main-grey
   @media (max-width: 768px)
     border-bottom: 1px solid $color-darker-border
     background: $color-bg-grey
@@ -17,7 +17,7 @@
   @media (max-width: 535px)
     display: grid
     grid-template-columns: 1.5fr 1fr
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-rows: 0.5fr 1.5fr
     grid-column-gap: 0
     grid-row-gap: 0
     row-gap: 6px
@@ -56,6 +56,8 @@
     grid-template-rows: 1fr 1fr
     grid-column-gap: 9px
     line-height: 130%
+  &__number
+    color: inherit
   &__phones
     @media (max-width: 535px)
       display: none !important
@@ -94,3 +96,13 @@
     column-gap: 7px
     flex-wrap: wrap
     justify-content: center
+
+  & .OnlineOrder
+    font-size: 12px
+    border: 1px solid $color-main-grey
+    border-radius: 4px
+    color: $color-main-grey
+    padding: 4px 6px
+    height: fit-content
+    background: none
+    margin-top: 0

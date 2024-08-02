@@ -5,7 +5,6 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import '@/reset.css'
-import '@/index.sass'
 import '@/global.sass'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

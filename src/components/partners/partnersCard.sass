@@ -1,0 +1,25 @@
+@use '../../index' as *
+
+.partnerCard
+  border: 1px solid $black
+  border-top-left-radius: 20px
+  border-bottom-right-radius: 20px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 7px
+  max-width: 300px
+  width: 100%
+  &__info
+    display: flex
+    flex-direction: column
+    gap: 3px
+  &__name
+    color: $black
+  &__link
+    color: $color-main-blue
+  &__logo
+    max-width: 300px
+    width: 100%

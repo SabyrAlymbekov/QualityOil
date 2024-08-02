@@ -1,0 +1,39 @@
+@use '../../index' as *
+
+.service
+  @include roboto-regular
+  display: flex
+  flex-direction: column
+  color: $text-primary-color
+  line-height: 1.6
+  & h1, & h2
+    color: $text-accent-color
+  & &__ul, & &__li
+    list-style-type: disc
+    margin-left: 20px
+  & &__ul
+    padding-top: 15px
+    padding-bottom: 15px
+  & > .oil-image
+    display: block
+    margin: 20px auto
+    max-width: 100%
+    height: auto
+
+  & .OnlineOrder:hover
+    padding: 12px 22px
+  &__cards
+    display: flex
+    flex-direction: row
+    column-gap: 20px
+    row-gap: 30px
+    flex-wrap: wrap
+    margin-top: 30px
+    justify-content: center
+    margin-bottom: 30px
+  &__card
+    max-width: 440px
+    min-width: 240px
+    background: $text-secondary-color
+    padding: 20px
+    border-radius: 8px

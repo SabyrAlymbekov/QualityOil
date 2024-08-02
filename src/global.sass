@@ -1,3 +1,5 @@
+@use 'index' as *
+
 body
   width: 100vw
 
@@ -7,3 +9,29 @@ body
   margin: 0 auto
   @media (max-width: 1330px)
     padding: 0px 20px
+
+h1, h2
+  font-weight: 500
+  font-size: 1.2em
+  margin-bottom: 5px
+
+h3
+  font-weight: 500
+  font-size: 1em
+  margin-bottom: 5px
+p
+  margin-bottom: 15px
+.highlight
+  font-weight: 500
+
+.heading
+  @include roboto-medium
+  font-weight: 500
+  font-size: 30px
+  padding-top: 20px
+  padding-bottom: 5px
+  border-bottom: 1px solid $color-border
+  margin-bottom: 10px
+  color: $black !important
+  @media (max-width: 368px)
+    font-size: 25px

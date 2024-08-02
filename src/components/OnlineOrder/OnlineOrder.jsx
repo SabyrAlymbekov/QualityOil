@@ -1,6 +1,6 @@
 import './OnlineOrder.sass'
 import { useState } from "react";
-import OnlineOrderModal from "@components/Header/OnlineOrderModal.jsx";
+import OnlineOrderModal from "@components/OnlineOrder/OnlineOrderModal.jsx";
 
 export default function OnlineOrder() {
     const [showModal, setShowModal] = useState(false);

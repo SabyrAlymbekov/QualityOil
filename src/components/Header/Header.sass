@@ -11,8 +11,9 @@
     gap: 0
   &__main
     display: flex
-    justify-content: space-between
+    flex-direction: row
     align-items: center
+    justify-content: space-between
     height: 50px
     @media (max-width: 1100px)
       height: 40px
@@ -22,6 +23,7 @@
     @media (max-width: 460px)
       height: 40px
   &__logo
+    //display: none
     height: 100%
     @media (max-width: 768px)
       height: 70%

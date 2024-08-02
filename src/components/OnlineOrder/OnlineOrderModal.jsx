@@ -1,4 +1,4 @@
-import '@components/Header/OnlineOrderModal.sass'
+import '@components/OnlineOrder/OnlineOrderModal.sass'
 import {useEffect, useRef, useState} from "react";
 
 export default function OnlineOrderModal({ onClose }) {
@@ -22,6 +22,7 @@ export default function OnlineOrderModal({ onClose }) {
         if (numbers.split(' ').join('') === "") {
             can = false;
             setIsPhoneCorrect(1);
+            console.log(numbers)
         } else {
             can = can && true;
             setIsPhoneCorrect(0);
