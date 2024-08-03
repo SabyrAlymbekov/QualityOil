@@ -1,0 +1,31 @@
+@use '../../index' as *
+
+.home
+  @include roboto-medium
+  width: 100vw
+  &__first
+    width: 100vw
+    padding-top: 20px
+    padding-bottom: 20px
+    background: $text-secondary-color
+    &__wrapper
+      display: flex
+      flex-direction: row
+      align-items: center
+      gap: 10px
+      @media (max-width: 558px)
+        flex-direction: column
+  &__heading
+    display: block
+    font-size: 1.5em
+    border-bottom: 3px solid $color-main-blue
+    width: fit-content
+  &__card
+    //border: 2px solid $black
+    border-radius: 4px
+    padding: 10px
+    transition: all .3s
+    background: white
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1)
+  &__card:hover
+    transform: translateY(-10px)

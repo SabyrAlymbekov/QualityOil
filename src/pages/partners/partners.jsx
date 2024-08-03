@@ -36,7 +36,7 @@ export default function PartnersPage() {
             website: "http://7days.kg/superarzan",
         },
     ]
-    return <div className="partners">
+    return <div className="partners container">
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/partners'>Партнеры</NavLink>]}></Path>
         <h1 className="heading">
             Партнеры

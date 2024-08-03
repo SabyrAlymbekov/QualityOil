@@ -7,7 +7,7 @@ import OnlineOrder from "@components/OnlineOrder/OnlineOrder.jsx";
 // 27min
 
 export default function About() {
-    return <div className="about">
+    return <div className="about container">
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/about'>О нас</NavLink>]}></Path>
         <div className="heading">
             Доставка

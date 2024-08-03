@@ -45,7 +45,7 @@ export default function Contact() {
         }
     }
 
-    return <div className="contact">
+    return <div className="contact  container">
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/contact'>Контакты</NavLink>]}></Path>
         <div className="heading">
             Связаться с нами

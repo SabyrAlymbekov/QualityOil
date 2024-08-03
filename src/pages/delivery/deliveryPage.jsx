@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import '@/pages/delivery/deliveryPage.sass'
 
 export default function DeliveryPage() {
-    return <div className="delivery">
+    return <div className="delivery container">
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/delivery'>Доставка</NavLink>]}></Path>
         <div className="heading">
             Доставка

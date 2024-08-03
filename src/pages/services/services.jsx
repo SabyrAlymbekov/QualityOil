@@ -4,7 +4,7 @@ import '@/pages/services/services.sass'
 import OnlineOrder from "@components/OnlineOrder/OnlineOrder.jsx";
 
 export default function ServicesPage() {
-    return <div className="services">
+    return <div className="services  container">
         <Path path={[<Link to='/'>Главная</Link>, <Link to='/services'>Услуги</Link>]}></Path>
         <h1 className="heading">Наши услуги</h1>
         <ul className="services__list">

@@ -6,7 +6,7 @@ import engineoil from '@assets/engineoil.png'
 import oilchange from '@assets/oilchange.png'
 
 export default function ServicePage() {
-    return <div className="service">
+    return <div className="service container">
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/service'>Сервис</NavLink>]}></Path>
         <h1 className="heading">Сервис обслуживания</h1>
         <h1>Доверьтесь сотрудникам центра замены масел «QUALITY АВТОСЕРВИС»</h1>
