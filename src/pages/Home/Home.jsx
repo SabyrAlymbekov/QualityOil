@@ -1,11 +1,9 @@
-import {NavLink} from "react-router-dom";
-import Path from "@components/path/path.jsx";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import catalogIMG from '@assets/cat-2.jpg'
 import oilengine from '@assets/oilengine.jpg'
 import basketoil from '@assets/basketoil.jpg'
 import 'swiper/css';
 import '@/pages/Home/Home.sass'
+import NewProduct from "@components/newproduct/newProduct.jsx";
 
 // 15min + 15 min + 15min
 
@@ -26,6 +24,9 @@ export default function Home() {
                     <img className="home__card__image" alt='catalog image' src={basketoil}/>
                 </div>
             </div>
+        </div>
+        <div className="home__second">
+            <NewProduct></NewProduct>
         </div>
     </div>
 }

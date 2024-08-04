@@ -1,0 +1,44 @@
+@use '../../index' as *
+
+.newProducts
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-top: 30px !important
+  &__heading
+    @include Oswald-medium
+    font-size: 1.5em
+    border-bottom: 3px solid $color-main-blue
+    display: block
+    width: fit-content
+    position: relative
+    margin-inline: auto
+    margin-bottom: 20px
+  & .swiper-button-prev::after
+    content: ''
+    background: url("../../assets/prev.svg")
+    width: 7px
+    height: 11px
+  & .swiper-button-prev
+    width: 48px
+    height: 48px
+    background: $white
+    border-radius: 100px
+    border: 1px solid $product-card-border
+    z-index: 999
+
+  & .swiper-button-next::after
+    content: ''
+    background: url("../../assets/prev.svg")
+    transform: rotate(180deg)
+    width: 7px
+    height: 11px
+  & .swiper-button-next
+    width: 48px
+    height: 48px
+    background: $white
+    border-radius: 100px
+    border: 1px solid $product-card-border
+    z-index: 999
+  & .swiper-slide
+    width: fit-content
+    padding-inline: 10px

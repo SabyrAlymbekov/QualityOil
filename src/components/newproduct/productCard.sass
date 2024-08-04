@@ -1,0 +1,26 @@
+@use '../../index' as *
+
+.productCard
+  width: 300px
+  background: $white
+  border: 1px solid $product-card-border
+  border-radius: 5px
+  padding: 30px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-inline: auto
+  @media (max-width: 1200px)
+    width: 200px
+  &__image
+    width: 100%
+  &__info
+    display: flex
+    flex-direction: column
+  &__cost
+    @include Oswald-regular
+    font-size: 22px
+    margin-bottom: 0
+  &__name
+    @include roboto-regular
+    font-size: 16px
