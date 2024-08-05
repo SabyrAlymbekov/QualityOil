@@ -1,0 +1,48 @@
+@use '../../index' as *
+
+.newsCard
+  @include roboto-regular
+  display: flex
+  flex-direction: column
+  max-width: 300px
+  width: 100%
+  gap: 20px
+  @media (max-width: 1000px)
+    max-width: 450px
+  &__image
+    width: 100%
+    max-height: 186px
+    @media (max-width: 1150px)
+      max-height: 124px
+    @media (max-width: 1000px)
+      max-height: 200px
+    object-fit: cover
+  &__info
+    gap: 5px
+    display: flex
+    flex-direction: column
+  &__date
+    display: flex
+    flex-direction: row
+    gap: 7px
+    align-items: center
+  &__date-heading
+    @include roboto-regular
+    font-size: 14px
+    color: $text-date-news
+    margin-bottom: 0 !important
+  &__readMore
+    font-weight: 500
+    font-size: 14px
+    display: flex
+    flex-direction: row
+    padding-top: 11px
+    padding-bottom: 11px
+    padding-left: 15px
+    padding-right: 10px
+    justify-content: center
+    border-radius: 4px
+    border: 1px solid $color-readMore
+    color: $color-readMore-text
+    align-items: center
+    width: fit-content

@@ -10,7 +10,7 @@ export default function ServicePage() {
         <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/service'>Сервис</NavLink>]}></Path>
         <h1 className="heading">Сервис обслуживания</h1>
         <h1>Доверьтесь сотрудникам центра замены масел «QUALITY АВТОСЕРВИС»</h1>
-        <img src={oilchange} alt="Моторное масло" className="oil-image"/>
+        <img src={oilchange} alt="Моторное масло" className="oil-image" loading="lazy"/>
         <p>Вы приобрели дорогой автомобиль, и Вам хотелось бы, чтобы эти затраты были оправданы длительным сроком
             службы? Вам не нужны приключения с неисправностями на дороге?</p>
         <p>Тогда доверьтесь сотрудникам центра замены масел «QUALITY АВТОСЕРВИС», чтобы вовремя получать лучший сервис

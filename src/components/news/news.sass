@@ -1,0 +1,26 @@
+@use '../../index' as *
+
+.newsComp
+  display: flex
+  flex-direction: column
+  &__heading
+    @include Oswald-medium
+    font-size: 1.5em
+    border-bottom: 3px solid $color-main-blue
+    display: block
+    width: fit-content
+    position: relative
+    margin-inline: auto
+    margin-bottom: 20px
+  &__wrapper
+    display: flex
+    flex-direction: row
+    gap: 30px
+    justify-content: space-between
+    @media (max-width: 1000px)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+    @media (max-width: 500px)
+      display: flex
+      flex-direction: column

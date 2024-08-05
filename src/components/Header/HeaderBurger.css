@@ -61,23 +61,6 @@
     transition: bottom .3s, transform .3s .15s;
 }
 
-@media only screen and (max-width: 768px) {
-    .HeaderBurger {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-    .HeaderBurger__burger {
-        display: flex;
-        height: 40px;
-        width: 50px;
-    }
-    .burger {
-        width: 23px;
-    }
-}
-
 .HeaderBurger__menu {
     position: absolute;
     top: 0;
@@ -132,4 +115,24 @@
 .HeaderBurger:has(.burger-checkbox:checked) > .HeaderBurger__menu {
     opacity: 1;
     z-index: 9;
+}
+
+@media only screen and (max-width: 768px) {
+    .HeaderBurger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .HeaderBurger__burger {
+        display: flex;
+        height: 40px;
+        width: 50px;
+    }
+    .burger {
+        width: 23px;
+    }
+    .HeaderBurger__close_wrapper {
+        height: 41px;
+    }
 }
