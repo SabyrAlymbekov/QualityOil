@@ -1,13 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "@/App.jsx";
 import React from "react";
-// import Home from "@/pages/Home/Home.jsx";
-// import ServicesPage from "@/pages/services/services.jsx";
-// import ServicePage from "@/pages/service/service.jsx";
-// import PartnersPage from "@/pages/partners/partners.jsx";
-// import DeliveryPage from "@/pages/delivery/deliveryPage.jsx";
-// import About from "@/pages/about/about.jsx";
-// import Contact from "@/pages/contacts/contact.jsx";
 import {lazy, Suspense} from "react";
 
 const Home = lazy(() => import('@/pages/Home/Home.jsx'));
@@ -17,6 +10,7 @@ const PartnersPage = lazy(() => import('@/pages/partners/partners.jsx'));
 const DeliveryPage = lazy(() => import('@/pages/delivery/deliveryPage.jsx'));
 const About = lazy(() => import('@/pages/about/about.jsx'));
 const Contact = lazy(() => import('@/pages/contacts/contact.jsx'));
+const Catalog = lazy(() => import('@/pages/catalog/catalog.jsx'));
 
 const Loading = () => <h1>Loading...</h1>
 
@@ -89,6 +83,24 @@ export const router = createBrowserRouter([
                     </Suspense>
                 ),
             },
+            {
+                path: "/catalog",
+                element: <Suspense fallback={<Loading />}>
+                    <Catalog/>
+                </Suspense>,
+            },
+            {
+                path: "/catalog/:catalogId",
+                element: <Suspense fallback={<Loading />}>
+                    <Catalog/>
+                </Suspense>
+            },
+            {
+                path: "/product/:productId",
+                element: <Suspense fallback={<Loading />}>
+                    <Catalog/>
+                </Suspense>
+            }
         ],
     },
 ]);

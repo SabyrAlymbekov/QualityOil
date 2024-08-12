@@ -1,3 +1,5 @@
+'use client'
+
 import {NavLink} from "react-router-dom";
 import Path from "@components/path/path.jsx";
 import '@/pages/contacts/contact.sass'

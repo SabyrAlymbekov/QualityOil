@@ -1,0 +1,22 @@
+@use '../../index' as *
+
+.products
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 10px
+  @media (max-width: 1100px)
+    grid-template-columns: repeat(3, 1fr)
+  @media (max-width: 600px)
+    grid-template-columns: repeat(2, 1fr)
+  @media (max-width: 360px)
+    grid-template-columns: 1fr
+
+.controls
+  @include roboto-medium
+  display: flex
+  flex-direction: row
+  width: 100%
+  justify-content: center
+  margin-top: 10px
+  &__control
+    padding: 5px

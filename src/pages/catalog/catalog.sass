@@ -1,0 +1,39 @@
+@use '../../index' as *
+
+.catalog
+  @include Oswald-medium
+  display: flex
+  flex-direction: column
+  gap: 10px
+  &__wrapper
+    display: grid
+    grid-template-columns: 250px auto
+    gap: 20px
+    @media (max-width: 1100px)
+      grid-template-columns: 200px auto
+    @media (max-width: 768px)
+      grid-template-columns: 100%
+      grid-template-rows: auto
+  & > .heading
+    padding-top: 10px
+    padding-bottom: 15px
+  &__choose
+    display: flex
+    flex-direction: column
+    font-size: 14px
+    width: 250px
+    @media (max-width: 1100px)
+      width: 200px
+    @media (max-width: 768px)
+      width: 100%
+  &__name
+    color: $black
+    border-bottom: 1px solid $black
+    padding-bottom: 5px
+    padding-top: 7px
+    line-height: 20px
+    transition: color .3s
+  &__name-active
+    color: $color-main-blue
+  &__name:hover
+    color: $color-main-blue

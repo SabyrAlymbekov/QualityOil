@@ -1,3 +1,5 @@
+'use client'
+
 import './OnlineOrder.sass'
 import { useState } from "react";
 import OnlineOrderModal from "@components/OnlineOrder/OnlineOrderModal.jsx";

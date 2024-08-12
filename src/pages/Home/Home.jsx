@@ -4,16 +4,17 @@ import oilengine from '@assets/oilengine.jpg';
 import basketoil from '@assets/basketoil.jpg';
 import 'swiper/css';
 import '@/pages/Home/Home.sass';
+import {Link} from "react-router-dom";
 
 const NewProduct = lazy(() => import("@components/newproduct/newProduct.jsx"));
 const TopProduct = lazy(() => import("@components/TopProduct/TopProduct.jsx"));
 const News = lazy(() => import("@components/news/news.jsx"));
 
-const Card = ({ name, imgSrc, altText }) => (
-    <div className="home__card">
+const Card = ({ name, imgSrc, altText, link }) => (
+    <Link className="home__card" to={link}>
         <h1 className="home__card__name">{name}</h1>
         <img className="home__card__image" alt={altText} src={imgSrc} loading='lazy' width='100%' height='100%' />
-    </div>
+    </Link>
 );
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="home">
             <div className="home__first">
                 <div className="home__first__wrapper container">
-                    <Card name="Каталог" imgSrc={catalogIMG} altText="catalog image" />
+                    <Card name="Каталог" imgSrc={catalogIMG} altText="catalog image" link={'/catalog'}/>
                     <Card name="Подбор масла" imgSrc={oilengine} altText="oil engine image" />
                     <Card name="Купить online" imgSrc={basketoil} altText="basket oil image" />
                 </div>
