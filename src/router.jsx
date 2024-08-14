@@ -2,6 +2,7 @@ import {createBrowserRouter} from "react-router-dom";
 import App from "@/App.jsx";
 import React from "react";
 import {lazy, Suspense} from "react";
+import ProductPage from "./pages/productPage/product-page";
 
 const Home = lazy(() => import('@/pages/Home/Home.jsx'));
 const ServicesPage = lazy(() => import('@/pages/services/services.jsx'));
@@ -98,7 +99,7 @@ export const router = createBrowserRouter([
             {
                 path: "/product/:productId",
                 element: <Suspense fallback={<Loading />}>
-                    <Catalog/>
+                    <ProductPage/>
                 </Suspense>
             }
         ],

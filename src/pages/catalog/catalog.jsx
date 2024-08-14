@@ -1,5 +1,3 @@
-
-
 import {Link, NavLink, useParams} from "react-router-dom";
 import Product from "@components/Product/Product.jsx";
 import Path from "@components/path/path.jsx";
@@ -174,17 +172,22 @@ export default function Catalog() {
         img: testproduct2
     },]
     return (<div className="catalog">
-        <div className="container">
-            <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/catalog'>Каталог</NavLink>]}></Path>
-            <div className="heading">
-                Каталог
+        <div className="catalog__tools">
+            <div className="container">
+                <Path path={[<NavLink to='/'>Главная</NavLink>, <NavLink to='/catalog'>Каталог</NavLink>]}></Path>
+                <div className="heading">
+                    Каталог
+                </div>
             </div>
+            {/* <div className="catalog__filters">
+                <h1 className="catalog__filters__heading">Фильтры</h1>
+            </div> */}
         </div>
         <div className="catalog__wrapper container">
             <div className="catalog__choose">
                 {catalog__types.map((type, index) => <CatalogType name={type} link={index} key={index} dopClass={(index === id && 'catalog__name-active')}></CatalogType>)}
             </div>
-
+            
             <ProductShow data={allprodcuts} limit={20}></ProductShow>
 
         </div>
