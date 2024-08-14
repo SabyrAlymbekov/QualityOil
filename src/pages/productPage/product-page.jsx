@@ -1,4 +1,4 @@
-'use client'
+
 
 import Path from "@components/path/path.jsx";
 import {NavLink, useParams} from "react-router-dom";

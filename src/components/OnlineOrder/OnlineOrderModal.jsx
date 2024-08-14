@@ -1,4 +1,4 @@
-'use client'
+
 
 import '@components/OnlineOrder/OnlineOrderModal.sass';
 import { useEffect, useRef, useState } from "react";

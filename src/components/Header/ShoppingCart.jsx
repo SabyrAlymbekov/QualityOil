@@ -1,5 +1,3 @@
-'use client'
-
 import './ShoppingCart.sass'
 
 export default function ShoppingCart() {

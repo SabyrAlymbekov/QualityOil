@@ -1,4 +1,4 @@
-'use client'
+
 
 import {Link, NavLink, useParams} from "react-router-dom";
 import Product from "@components/Product/Product.jsx";

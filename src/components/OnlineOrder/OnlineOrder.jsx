@@ -1,4 +1,4 @@
-'use client'
+
 
 import './OnlineOrder.sass'
 import { useState } from "react";

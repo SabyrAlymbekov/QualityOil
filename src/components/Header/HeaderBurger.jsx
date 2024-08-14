@@ -1,5 +1,3 @@
-'use client'
-
 import './HeaderBurger.css'
 import {NavLink} from "react-router-dom";
 import {useState} from "react";
